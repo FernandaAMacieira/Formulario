@@ -1,45 +1,41 @@
-body{
-    margin: 0;
-    background-color: rgb(247, 247, 248);
-}
-    header{
-        align-items: center;
-    }
-    .logo{
-        align-items:center;
-        text-align:center ;
-    }
-    .compra{
-        margin-top: 3px;
-        margin-bottom: 4px;
-    }
-    #logo2{
-        padding-bottom: 5px;
-    }
-    #logo1,
-    #logo2{
-        padding-top:10px;
-    }
-    .titulo{
-        text-align: center;
-    }
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+body{
+    margin: 0; 
+    background-color: #bddce6;
+}
+.cabeçalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.titulo{
+    text-align: center;
+}
+.images{
+    text-align: center
+}
+.images img{
+    padding: 6px;
+    width: 65px;
+    height: auto; 
+    }
 .container{
     display: flex;
     justify-content: center;
-    height:675px;
 }
 .produto{
     height: auto;
-    ;
     text-align: center;
+    background-color:#fafeff;
+    border-radius: 10px;
 }
-
 #complementar{
     padding-top:12px;
     padding-bottom: 12px;
     font-size: 20px;
-
 }
 textarea{
     width: 381px;
@@ -47,71 +43,74 @@ textarea{
     border-radius: 10px;
     border: 1px solid #c2c2c2;
 }
-h4{
-    font-size: 22px;
-    margin: 7px;
-    padding: 7px;
-    text-align: center;
+h1{
+  text-transform: uppercase;
+  
 }
 h3{
     margin: 10px;
     font-size: 25px;
 }
-    .posicao{
-        display: flex;
-        justify-content: space-between;
-    }
+h4{
+    font-size: 22px;
+    margin: 7px;
+    padding: 7px;
+    text-align: center;
+   
+}
 
-    form{
-        border: 1px solid #000;
-        border-radius: 10px;
-    }
-    label {
-        font-size:20px;
-        text-align: left;
-        display: block;
-        padding: 12px;
-    }
-    input{
-        border: 1px solid #c2c2c2;
-        border-radius: 7px;
-        align-items: center;
-    }
-    #texto{
-        width:500px;
-        height:30px;
-        
-    }
-    #quantidade,
-    #real{
-        width: 145px;
-        height: 30px;
-    }
-    button{
-        margin-bottom: 7px;
-    }
+.posicao{
+    display: flex;
+    justify-content: space-between;
+}
 
+form{
+    border: 1px solid transparent;
+}
+label {
+    font-family:Georgia;
+    font-size:18px;
+    text-align: left;
+    display: block;
+    padding: 12px;
+    }
+input{
+    border: 1px solid #c2c2c2;
+    border-radius: 7px;
+    align-items: center;
+    }
+#texto{
+    width:500px;
+    height:30px;    
+    }
+#quantidade,
+#real{
+    width: 145px;
+    height: 30px;
+    }
+button{
+    margin-bottom: 7px;
+    background-color:#bddce6;
+    color: rgb(10, 10, 10);
+    border-radius: 10px;
+    }
     @media (min-width: 320px) and (max-width:600px){
-        header {
-            height: 130px;
-            margin-bottom: 3px;
-        }
         .produto{
             padding: 30px;
             text-align: center; 
         }
         #texto{
             width:auto;
-        }
+            }
         textarea {
             width: 190px;
             height: auto;
-        }
+            }
         #complementar {
             padding-top: 5px;
             padding-bottom: 12px;
             font-size: 20px; 
-        }
+            }
         .posicao {
             display: block;
         }
